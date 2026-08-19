@@ -2,8 +2,6 @@
 
 ![Career Mind AI](careermind.png)
 
-> **Your AI-powered career companion.** From skills to salary — get personalized roadmaps, resume analysis, mock interviews, cover letters and real market insights in one place.
-
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Not%20Used-3178C6?logo=typescript&logoColor=white)
@@ -378,9 +376,3 @@ Put nginx in front of both and enable HTTPS.
 | Login says "Invalid email or password" | Credentials are verified against **Firebase**, not the local DB. Reset the password in the Firebase console or register a new account. |
 | Gemini key format `AQ.…` flagged invalid | These are valid v2 keys; the limitation is the free-tier quota, not the key. |
 | Cover letter / salary AI slow | Generation can take 5–20s on the free tier — the button shows a loading state. |
-
----
-
-## License
-
-This project is provided for educational and personal use. Please do not commit any API keys, service-account files, or other secrets to version control.
