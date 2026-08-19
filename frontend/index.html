@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerMind.AI</title>
+    <link rel="icon" href="data:," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: '#081425',
+              surface: '#081425',
+              'surface-dim': '#081425',
+              'surface-card': '#0f1c2e',
+              'surface-container-lowest': '#030e1f',
+              'surface-container-low': '#101c2d',
+              'surface-container': '#152031',
+              'surface-container-high': '#1f2a3c',
+              'surface-container-highest': '#2a3548',
+              'surface-variant': '#2a3548',
+              'surface-bright': '#2e3a4c',
+              'glass-bg': 'rgba(15, 28, 46, 0.7)',
+              'border-subtle': 'rgba(255, 255, 255, 0.08)',
+              'on-background': '#d7e3fb',
+              'on-surface': '#d7e3fb',
+              'on-surface-variant': '#c7c4d7',
+              'on-primary': '#1000a9',
+              'on-primary-container': '#0d0096',
+              'on-secondary': '#00344d',
+              'on-secondary-container': '#00344e',
+              'on-tertiary': '#3c0091',
+              'on-tertiary-container': '#340080',
+              'on-error': '#690005',
+              'on-error-container': '#ffdad6',
+              primary: '#c0c1ff',
+              'primary-container': '#8083ff',
+              'primary-fixed': '#e1e0ff',
+              'primary-fixed-dim': '#c0c1ff',
+              'on-primary-fixed': '#07006c',
+              'on-primary-fixed-variant': '#2f2ebe',
+              secondary: '#89ceff',
+              'secondary-container': '#00a2e6',
+              'secondary-fixed': '#c9e6ff',
+              'secondary-fixed-dim': '#89ceff',
+              'on-secondary-fixed': '#001e2f',
+              'on-secondary-fixed-variant': '#004c6e',
+              tertiary: '#d0bcff',
+              'tertiary-container': '#a078ff',
+              'tertiary-fixed': '#e9ddff',
+              'tertiary-fixed-dim': '#d0bcff',
+              'on-tertiary-fixed': '#23005c',
+              'on-tertiary-fixed-variant': '#5516be',
+              'inverse-primary': '#494bd6',
+              'inverse-surface': '#d7e3fb',
+              'inverse-on-surface': '#263143',
+              outline: '#908fa0',
+              'outline-variant': '#464554',
+              'surface-tint': '#c0c1ff',
+              success: '#10b981',
+              error: '#ef4444',
+              'error-container': '#93000a',
+              warning: '#f59e0b',
+            },
+            borderRadius: {
+              DEFAULT: '0.125rem',
+              lg: '0.25rem',
+              xl: '0.5rem',
+              full: '0.75rem',
+            },
+            spacing: {
+              unit: '4px',
+              'stack-sm': '8px',
+              'stack-md': '16px',
+              'stack-lg': '32px',
+              gutter: '24px',
+              'margin-desktop': '48px',
+              'margin-mobile': '16px',
+            },
+            fontFamily: {
+              'mono-sm': ['JetBrains Mono', 'monospace'],
+              'label-md': ['Inter', 'sans-serif'],
+              'display-lg': ['Inter', 'sans-serif'],
+              'body-sm': ['Inter', 'sans-serif'],
+              'body-lg': ['Inter', 'sans-serif'],
+              'headline-md': ['Inter', 'sans-serif'],
+              'body-md': ['Inter', 'sans-serif'],
+              'headline-lg': ['Inter', 'sans-serif'],
+            },
+            fontSize: {
+              'mono-sm': ['13px', { lineHeight: '18px', fontWeight: '500' }],
+              'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.05em', fontWeight: '600' }],
+              'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '700' }],
+              'body-sm': ['14px', { lineHeight: '20px', fontWeight: '400' }],
+              'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+              'headline-md': ['24px', { lineHeight: '32px', fontWeight: '600' }],
+              'body-md': ['16px', { lineHeight: '24px', fontWeight: '400' }],
+              'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.01em', fontWeight: '600' }],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #081425;
+        color: #d7e3fb;
+      }
+      .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+        vertical-align: middle;
+      }
+      .glass-panel {
+        background: rgba(15, 28, 46, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .glass-bg {
+        background: rgba(15, 28, 46, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .pro-card {
+        background-color: #0f1c2e;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: all 0.3s ease;
+      }
+      .pro-card:hover {
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+      .mesh-gradient {
+        background-color: #081425;
+        background-image: radial-gradient(at 8% 87%, hsla(245, 67%, 58%, 0.15) 0px, transparent 50%),
+          radial-gradient(at 93% 15%, hsla(200, 80%, 50%, 0.1) 0px, transparent 50%),
+          radial-gradient(at 48% 66%, hsla(280, 60%, 50%, 0.08) 0px, transparent 50%);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #081425;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2a3548;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #464554;
+      }
+      .step-active {
+        border-color: #c0c1ff;
+        color: #c0c1ff;
+      }
+      .step-completed {
+        border-color: #10b981;
+        color: #10b981;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95) translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+      .animate-scale-in {
+        animation: scaleIn 0.25s ease-out forwards;
+      }
+      @keyframes shimmer {
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      .gauge-circle {
+        transition: stroke-dashoffset 1s ease-out;
+      }
+      .input-glow:focus {
+        box-shadow: 0 0 0 2px rgba(192, 193, 255, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
